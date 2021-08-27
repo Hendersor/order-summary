@@ -14,6 +14,8 @@
 
 
 body{
+    margin-top: 60px;
+    margin-bottom: 20px;
     font-size: 62.5%;
     background-color: var(--pale-blue);
     display: flex;
@@ -25,7 +27,7 @@ body{
 main{
     display: grid;
     grid-template-columns: minmax(310px, 310px);
-    grid-template-rows: repeat(4, minmax(150px, 150px));
+    grid-template-rows: minmax(150px, 150px) minmax(150px, 150px) minmax(70px, 70px) minmax(150px, 150px);
     grid-template-areas: 
     "image"
     "order"
@@ -70,4 +72,86 @@ main{
     font-size: 0.9rem;
     color: var(--desaturated-blue);
     line-height: 22px;
+}
+
+.plan{
+    background-color: white;
+}
+
+.plan .gray{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    width: 85%;
+    height: 65px;
+    background-color: var(--very-pale-blue);
+    border-radius: 10px;
+}
+
+.plan h3{
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 900;
+    margin-right: 20px;
+}
+
+.plan span{
+    color: var(--desaturated-blue);
+    font-weight: 500;
+}
+
+.plan a{
+    font-size: 0.9rem;
+    font-weight: 700;
+    font-family: 'Red Hat Display', sans-serif;
+    
+    
+}
+
+.plan .gray .icon{
+    background-image: url("https://res.cloudinary.com/dwdz4mn27/image/upload/v1630101099/order-summary/icon-music_o6s0bz.svg");
+    width: 45px;
+    height: 45px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.buttons{
+    background-color:white;
+    border-bottom-left-radius:15px;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.buttons .payment{
+    align-self: center;
+    width: 85%;
+    height: 45px;
+    border: none;
+    background-color: var(--bright-blue);
+    color: white;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 700;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.buttons .cancel{
+    align-self: center;
+    width: 85%;
+    height: 45px;
+    border:none;
+    background-color: unset;
+    font-family: 'Red Hat Display', sans-serif;
+    color: var(--desaturated-blue);
+    font-weight: 900;
+    font-size: 0.9rem;
+
+
 }
