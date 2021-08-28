@@ -36,6 +36,9 @@ main{
     "buttons";
 }
 
+main h1, p, a, h3, button{
+    font-family: 'Red Hat Display', sans-serif;
+}
 
 
 .image{
@@ -60,7 +63,6 @@ main{
 }
 
 .order h1{
-    font-family: 'Red Hat Display', sans-serif;
     font-weight: 900;
     font-size: 1.3rem;
     align-self: center;
@@ -68,12 +70,13 @@ main{
 
 .order p{
     text-align: center;
-    font-family: 'Red Hat Display', sans-serif;
     font-weight: 500;
     font-size: 0.9rem;
     color: var(--desaturated-blue);
     line-height: 22px;
 }
+
+
 
 .plan{
     background-color: white;
@@ -91,7 +94,6 @@ main{
 }
 
 .plan h3{
-    font-family: 'Red Hat Display', sans-serif;
     font-size: 0.8rem;
     font-weight: 900;
     margin-right: 20px;
@@ -105,9 +107,6 @@ main{
 .plan a{
     font-size: 0.9rem;
     font-weight: 700;
-    font-family: 'Red Hat Display', sans-serif;
-    
-    
 }
 
 .plan .gray .icon{
@@ -129,29 +128,28 @@ main{
     justify-content: space-evenly;
 }
 
-.buttons .payment{
-    align-self: center;
+.buttons .payment, .cancel{
     width: 85%;
     height: 45px;
+    align-self: center;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 900;
+}
+
+
+.buttons .payment{
     border: none;
     background-color: var(--bright-blue);
     color: white;
-    font-family: 'Red Hat Display', sans-serif;
-    font-weight: 700;
     border-radius: 10px;
-    font-size: 0.9rem;
     cursor: pointer;
 }
 
 .buttons .cancel{
-    align-self: center;
-    width: 85%;
-    height: 45px;
     border:none;
     background-color: unset;
-    font-family: 'Red Hat Display', sans-serif;
     color: var(--desaturated-blue);
-    font-weight: 900;
-    font-size: 0.9rem;
-    cursor:pointer
 }
+
+
